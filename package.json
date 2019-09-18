@@ -1,0 +1,23 @@
+{
+  "name": "js-swing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "remyli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remylii/js-swing/issues"
+  },
+  "homepage": "https://github.com/remylii/js-swing#readme",
+  "devDependencies": {
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
