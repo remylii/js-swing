@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "remyli",
   "license": "MIT",
@@ -15,9 +15,31 @@
   },
   "homepage": "https://github.com/remylii/js-swing#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
     "ts-loader": "^6.1.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts", "js"
+    ],
+    "moduleNameMapper": {
+      "^#/(.+)": "<rootDir>/ts/$1"
+    },
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ]
   }
 }
