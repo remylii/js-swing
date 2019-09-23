@@ -1,6 +1,6 @@
-import { fizzbuzz } from '#/action';
+import { fizzbuzz } from "#/action";
 
-const elem = document.querySelector('.result');
+const elem = document.querySelector(".result");
 if (!!elem) {
-    elem.innerHTML = fizzbuzz();
+    elem.innerHTML = fizzbuzz(15);
 }

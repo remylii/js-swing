@@ -25,7 +25,8 @@
   },
   "jest": {
     "moduleFileExtensions": [
-      "ts", "js"
+      "ts",
+      "js"
     ],
     "moduleNameMapper": {
       "^#/(.+)": "<rootDir>/ts/$1"
